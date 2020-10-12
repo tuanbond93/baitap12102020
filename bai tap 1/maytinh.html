@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <input type="number" id="so1" placeholder="Nhập số thứ nhất">
+
+
+                <input type="number" id="so2" placeholder="Nhập số thứ hai">
+            </td>
+        </tr>
+        <tr>
+            <td id="luachon">
+
+                <button value="(+)"> Addition(+)</button>
+                <button value="(-)"> Subtraction(-)</button>
+                <button value="(X)"> Multiplication(X)</button>
+                <button value="(/)"> Division(/)</button>
+
+            </td>
+        </tr>
+        
+    </table>
+    <script>
+        var selectedElement = document.getElementById("luachon");
+        selectedElement.addEventListener("Click", tinh);
+        function tinh() {
+            var selectvalue = document.getElementById("luachon").value;
+            alert(selectvalue);
+        }
+    </script>
+</body>
+
+</html>
