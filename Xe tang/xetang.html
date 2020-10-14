@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+
+</head>
+
+<body>
+  <div style="width: 190px; height: 190px; border: 1px solid black;" id="battleFiled">
+    <div
+      style="width: 19px; height: 19px; background-image: url('tank.png');background-size: 100% 100%;position: relative;"
+      id="tank"></div>
+  </div>
+
+
+</body>
+<script>
+  window.addEventListener('keydown', function (e) {
+    var keycode = e.keyCode
+    if (keycode === 39) {
+      document.getElementById("tank").style.left = "19px"
+    }
+  })
+</script>
+
+</html>
